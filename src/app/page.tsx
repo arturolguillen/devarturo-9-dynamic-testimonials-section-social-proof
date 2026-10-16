@@ -9,6 +9,8 @@ import HeroSectionHeading from "@/components/HeroSectionHeading";
 import HeroSectionDescription from "@/components/HeroSectionDescription";
 import HeroSectionCTAButtons from "@/components/HeroSectionCTAButtons";
 import HeroImageGrid from "@/components/HeroImageGrid";
+import PhilosophySection from "@/components/PhilosophySection";
+import PhilosophySectionContent from "@/components/PhilosophySectionContent";
 
 export default function Home() {
     return (
@@ -26,6 +28,9 @@ export default function Home() {
                     <HeroSectionCTAButtons />
                     <HeroImageGrid />
                 </HeroSection>
+                <PhilosophySection>
+                    <PhilosophySectionContent />
+                </PhilosophySection>
             </MainWrapper>
         </>
     );
