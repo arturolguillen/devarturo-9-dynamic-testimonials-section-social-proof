@@ -15,6 +15,10 @@ import PhilosophySectionImage from "@/components/PhilosophySectionImage";
 import BookingSection from "@/components/BookingSection";
 import BookingSectionContent from "@/components/BookingSectionContent";
 import BookingForm from "@/components/BookingForm";
+import Footer from "@/components/Footer";
+import FooterLogo from "@/components/FooterLogo";
+import FooterNavigation from "@/components/FooterNavigation";
+import FooterCopyright from "@/components/FooterCopyright";
 
 export default function Home() {
     return (
@@ -41,6 +45,11 @@ export default function Home() {
                     <BookingForm />
                 </BookingSection>
             </MainWrapper>
+            <Footer>
+                <FooterLogo />
+                <FooterNavigation />
+                <FooterCopyright />
+            </Footer>
         </>
     );
 }
