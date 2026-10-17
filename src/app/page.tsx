@@ -19,6 +19,8 @@ import Footer from "@/components/Footer";
 import FooterLogo from "@/components/FooterLogo";
 import FooterNavigation from "@/components/FooterNavigation";
 import FooterCopyright from "@/components/FooterCopyright";
+import InfiniteCarousel from "@/components/InfiniteCarousel";
+import GradientMasks from "@/components/GradientMasks";
 
 export default function Home() {
     return (
@@ -44,6 +46,9 @@ export default function Home() {
                     <BookingSectionContent />
                     <BookingForm />
                 </BookingSection>
+                <InfiniteCarousel>
+                    <GradientMasks />
+                </InfiniteCarousel>
             </MainWrapper>
             <Footer>
                 <FooterLogo />
