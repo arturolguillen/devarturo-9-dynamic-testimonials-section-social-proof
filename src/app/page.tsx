@@ -11,6 +11,10 @@ import HeroSectionCTAButtons from "@/components/HeroSectionCTAButtons";
 import HeroImageGrid from "@/components/HeroImageGrid";
 import PhilosophySection from "@/components/PhilosophySection";
 import PhilosophySectionContent from "@/components/PhilosophySectionContent";
+import PhilosophySectionImage from "@/components/PhilosophySectionImage";
+import BookingSection from "@/components/BookingSection";
+import BookingSectionContent from "@/components/BookingSectionContent";
+import BookingForm from "@/components/BookingForm";
 
 export default function Home() {
     return (
@@ -30,7 +34,12 @@ export default function Home() {
                 </HeroSection>
                 <PhilosophySection>
                     <PhilosophySectionContent />
+                    <PhilosophySectionImage />
                 </PhilosophySection>
+                <BookingSection>
+                    <BookingSectionContent />
+                    <BookingForm />
+                </BookingSection>
             </MainWrapper>
         </>
     );

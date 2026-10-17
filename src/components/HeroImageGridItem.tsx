@@ -8,7 +8,7 @@ export default function HeroImageGridItem({ image, raised = false }: {
 }) {
     return (
         <div className={clsx(
-            "aspect-square max-w-96 rounded-xl overflow-hidden relative shadow-md bg-cover bg-center border border-stone-200/50",
+            "aspect-square max-w-96 rounded-xl overflow-hidden relative shadow-md border border-stone-200/50",
             raised && "mt-0 md:-mt-8",
         )}>
             <Image
