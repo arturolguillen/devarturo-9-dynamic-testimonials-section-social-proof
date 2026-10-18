@@ -21,6 +21,8 @@ import FooterNavigation from "@/components/FooterNavigation";
 import FooterCopyright from "@/components/FooterCopyright";
 import InfiniteCarousel from "@/components/InfiniteCarousel";
 import GradientMasks from "@/components/GradientMasks";
+import CarouselRow from "@/components/CarouselRow";
+import reviews from "@/reviews";
 
 export default function Home() {
     return (
@@ -48,6 +50,8 @@ export default function Home() {
                 </BookingSection>
                 <InfiniteCarousel>
                     <GradientMasks />
+                    <CarouselRow reviews={reviews} />
+                    <CarouselRow reviews={reviews} />
                 </InfiniteCarousel>
             </MainWrapper>
             <Footer>
