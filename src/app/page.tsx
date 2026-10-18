@@ -50,8 +50,8 @@ export default function Home() {
                     <ReviewsSectionContent />
                     <InfiniteCarousel>
                         <GradientMasks />
-                        <CarouselRow reviews={reviews} />
-                        <CarouselRow reviews={reviews} />
+                        <CarouselRow reviews={reviews.slice(0, 3)} direction="left" />
+                        <CarouselRow reviews={reviews.slice(3)} direction="right" />
                     </InfiniteCarousel>
                 </ReviewsSection>
                 <BookingSection>
