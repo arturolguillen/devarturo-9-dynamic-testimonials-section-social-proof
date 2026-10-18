@@ -23,6 +23,8 @@ import InfiniteCarousel from "@/components/InfiniteCarousel";
 import GradientMasks from "@/components/GradientMasks";
 import CarouselRow from "@/components/CarouselRow";
 import reviews from "@/reviews";
+import ReviewsSection from "@/components/ReviewsSection";
+import ReviewsSectionContent from "@/components/ReviewsSectionContent";
 
 export default function Home() {
     return (
@@ -44,15 +46,18 @@ export default function Home() {
                     <PhilosophySectionContent />
                     <PhilosophySectionImage />
                 </PhilosophySection>
+                <ReviewsSection>
+                    <ReviewsSectionContent />
+                    <InfiniteCarousel>
+                        <GradientMasks />
+                        <CarouselRow reviews={reviews} />
+                        <CarouselRow reviews={reviews} />
+                    </InfiniteCarousel>
+                </ReviewsSection>
                 <BookingSection>
                     <BookingSectionContent />
                     <BookingForm />
                 </BookingSection>
-                <InfiniteCarousel>
-                    <GradientMasks />
-                    <CarouselRow reviews={reviews} />
-                    <CarouselRow reviews={reviews} />
-                </InfiniteCarousel>
             </MainWrapper>
             <Footer>
                 <FooterLogo />
